@@ -21,6 +21,10 @@ In addition to the tutorial files, there are a number of online resources that y
 - [HTML Dog HTML Tutorials](http://htmldog.com/guides/html/)
 - [GeeksForGeeks HTML Guide](https://www.geeksforgeeks.org/html/)
 
+## Extras
+
+ - [Check Markup Validation](https://validator.w3.org/)
+ 
 ## Contact
 
 If you have any questions or feedback about the tutorial, please don't hesitate to contact me at [banzo.aditya@gmail.com](mailto:banzo.aditya@gmail.com). I would love to hear from you!
