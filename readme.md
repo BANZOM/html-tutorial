@@ -15,6 +15,7 @@ To get started, simply clone or download the tutorial files from this repository
 
 In addition to the tutorial files, there are a number of online resources that you can use to learn more about HTML and web development. Some recommended resources include:
 
+- [FreeCodeCamp Learn HTML Video](https://www.youtube.com/watch?v=kUMe1FH4CHE)
 - [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
 - [MDN Web Docs HTML Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [HTML Dog HTML Tutorials](http://htmldog.com/guides/html/)
