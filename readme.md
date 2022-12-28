@@ -27,4 +27,4 @@ In addition to the tutorial files, there are a number of online resources that y
  
 ## Contact
 
-If you have any questions or feedback about the tutorial, please don't hesitate to contact me at [banzo.aditya@gmail.com](mailto:banzo.aditya@gmail.com). I would love to hear from you!
+If you have any questions or feedback about the tutorial, please don't hesitate to start a discussion. I would love to hear from you!
