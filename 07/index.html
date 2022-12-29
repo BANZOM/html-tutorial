@@ -18,7 +18,8 @@
       </h1>
       <!-- horizontal rule <hr> -->
 
-      <nav>
+      <!-- <nav aria-labelledby="__NAME__">     </nav> -->
+      <nav aria-label="Programming Languages">
         <ul>
           <li>
             <a href="#YES_PL">Languages I like</a>
@@ -32,69 +33,75 @@
         </ul>
       </nav>
     </header>
-
+    <br><hr>
     <main>
-      <hr />
-      <h2>
-        The First Topic
-      </h2>
-      <h3>
-        This is the subtopic.
-      </h3>
-      <p>
-        This is the paragraph of subtopic.
-        <br />
-        ---The First Line
-        <!-- br is the line break -->
-        <br />
-        ---The Second Line
-      </p>
-      <hr />
-      <h2>
-        The Second Topic
-      </h2>
-      <h3>
-        This is the subtopic.
-      </h3>
-      <p>
-        This is the paragraph of subtopic.
-      </p>
+      <article>
+        <h2>About Topics Section:</h2>
+        <section>
+          <h3>
+            The First Topic
+          </h3>
+          <h4>
+            This is the subtopic.
+          </h4>
+          <p>
+            This is the paragraph of subtopic.
+            <br />
+            ---The First Line
+            <!-- br is the line break -->
+            <br />
+            ---The Second Line
+          </p>
+        </section>
+        <section>
+          <h3>
+            The Second Topic
+          </h3>
+          <h4>
+            This is the subtopic.
+          </h4>
+          <p>
+            This is the paragraph of subtopic.
+          </p>
+          <hr />
+        </section>
+      </article>
+      <article>
+        <section id="YES_PL">
+          <h2>
+            The True Topic: About Programming Languages of My Taste
+          </h2>
+          <h3>
+            My Top Picks Programming Languages are:
+          </h3>
+          <ol>
+            <li>Python</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Javascript</li>
+            <li>Bash</li>
+          </ol>
+          <strong> <abbr title="Because of its syntax.">C++</abbr></strong> is
+          my top pick.
+        </section>
 
-      <section id="YES_PL">
-        <h2>
-          The True Topic: About Programming Languages of My Taste
-        </h2>
-        <h3>
-          My Top Picks Programming Languages are:
-        </h3>
-        <ol>
-          <li>Python</li>
-          <li>C++</li>
-          <li>C</li>
-          <li>Javascript</li>
-          <li>Bash</li>
-        </ol>
-        <strong> <abbr title="Because of its syntax.">C++</abbr></strong> is my
-        top pick.
-      </section>
-
-      <section id="NO_PL">
-        <h3>
-          My Last Picks Programming Languages are:
-        </h3>
-        <!-- &nbsp is used for whitespace -->
-        <ul>
-          <li>Java</li>
-          <li>PHP</li>
-          <li>Ruby</li>
-        </ul>
-        <p>
-          The Reason I usually don't code in those Languages is,
-          <em> It Sucks!.</em>
-        </p>
-        <hr />
-      </section>
-
+        <section id="NO_PL">
+          <h3>
+            My Last Picks Programming Languages are:
+          </h3>
+          <!-- &nbsp is used for whitespace -->
+          <ul>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Ruby</li>
+          </ul>
+          <p>
+            The Reason I usually don't code in those Languages is,
+            <em> It Sucks!.</em>
+          </p>
+          <hr />
+        </section>
+      </article>
       <p>Here's The example of Address:</p>
       <!-- description list -->
       <dl>
