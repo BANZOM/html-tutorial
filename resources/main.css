@@ -1,6 +1,9 @@
 html {
   font-size: 22px;
 }
+p{
+  font-size: 16px;
+}
 body {
   background-color: #333;
   color: antiquewhite;
