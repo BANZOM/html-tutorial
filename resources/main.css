@@ -17,7 +17,7 @@ a:hover {
   color: red;
 }
 
-table,tr,td{
+table,tr,td,th {
   border-collapse:collapse;
   border:1px solid #ccc;
   font-family: 'Courier New', Courier, monospace;
