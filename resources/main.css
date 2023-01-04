@@ -16,3 +16,10 @@ a:active,
 a:hover {
   color: red;
 }
+
+table,tr,td{
+  border-collapse:collapse;
+  border:1px solid #ccc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem;
+}
