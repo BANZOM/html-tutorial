@@ -348,7 +348,7 @@
             <option value="other">Other</option>
           </select>
         </p>
-        <p>
+        <!-- <p>
           <label for="select-transport">Favourite Transport:</label>
           <select name="transport" id="transport" multiple>
             <optgroup label="Land">
@@ -370,6 +370,22 @@
             </optgroup>
             <option value="other">Other</option>
           </select>
+        </p> -->
+        <p>
+          <label for="select-transport">Favourite Transport:</label>
+          <input type="text" name="select-transport" id="select-transport" list="transport-list">
+          <datalist id="transport-list">
+            <option value="Car">
+            <option value="MoterCycle">
+            <option value="Scooter">
+            <option value="Aeroplane">
+            <option value="Helicopter">
+            <option value="SpaceCraft">
+            <option value="Boat">
+            <option value="Ship">
+            <option value="Submarine">
+            <option value="Other">
+          </datalist>
         </p>
       </form>
     </article>
