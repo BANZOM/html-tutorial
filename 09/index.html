@@ -307,48 +307,50 @@
       <p>I'd really like to here from You!!!</p>
 
       <form action="https://httpbin.org/get" method="get">
-        <p>
-          <label for="first-name">First Name:</label>
-          <input type="text" name="first-name" id="first-name" placeholder="Aditya" autocomplete="on" required>
-        </p>
-        <p><label for="last-name">Last Name:</label>
-          <input type="text" name="last-name" id="last-name" placeholder="Panwar" autocomplete="on" required>
-        </p>
-        <p><label for="mail">Mail ID:</label>
-          <input type="email" name="mail" id="mail" placeholder="xyz@mail.com" autocomplete="on" required>
-        </p>
-        <p>
-          <label for="password">Promocode:</label>
-          <input type="password" name="promocode" id="password" placeholder="Your's Unique">
-        </p>
-        <p>
-          <label for="tel">Phone:</label>
-          <input type="tel" name="tel" id="tel" placeholder="091 999 999 9999" autocomplete="on" required
-            pattern="[0-9]{3} [0-9]{3} [0-9]{3} [0-9]{4}">
-        </p>
-        <p>
-          <label for="dob">Date of birth:</label>
-          <input type="date" name="dob" id="dob" autocomplete="on" required>
-        </p>
-        <p>
-          <label for="decade">Favourite year:</label>
-          <input type="number" name="decade" id="decade" min="1950" max="2025" step="1" value="2020" autocomplete="on"
-            required>
-        </p>
-        <p>
-          <label for="select-color">Favourite Color:</label>
-          <select name="color" id="color">
-            <option value="red" selected>Red</option>
-            <option value="blue">Blue</option>
-            <option value="voilet">Voilet</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="white">White</option>
-            <option value="black">Black</option>
-            <option value="other">Other</option>
-          </select>
-        </p>
-        <!-- <p>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Aditya" autocomplete="on" required>
+          </p>
+          <p><label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Panwar" autocomplete="on" required>
+          </p>
+          <p><label for="mail">Mail ID:</label>
+            <input type="email" name="mail" id="mail" placeholder="xyz@mail.com" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="password">Promocode:</label>
+            <input type="password" name="promocode" id="password" placeholder="Your's Unique">
+          </p>
+          <p>
+            <label for="tel">Phone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="091 999 999 9999" autocomplete="on" required
+              pattern="[0-9]{3} [0-9]{3} [0-9]{3} [0-9]{4}">
+          </p>
+          <p>
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob" id="dob" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="decade">Favourite year:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2025" step="1" value="2020" autocomplete="on"
+              required>
+          </p>
+          <p>
+            <label for="select-color">Favourite Color:</label>
+            <select name="color" id="color">
+              <option value="red" selected>Red</option>
+              <option value="blue">Blue</option>
+              <option value="voilet">Voilet</option>
+              <option value="green">Green</option>
+              <option value="yellow">Yellow</option>
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <!-- <p>
           <label for="select-transport">Favourite Transport:</label>
           <select name="transport" id="transport" multiple>
             <optgroup label="Land">
@@ -371,22 +373,23 @@
             <option value="other">Other</option>
           </select>
         </p> -->
-        <p>
-          <label for="select-transport">Favourite Transport:</label>
-          <input type="text" name="select-transport" id="select-transport" list="transport-list">
-          <datalist id="transport-list">
-            <option value="Car">
-            <option value="MoterCycle">
-            <option value="Scooter">
-            <option value="Aeroplane">
-            <option value="Helicopter">
-            <option value="SpaceCraft">
-            <option value="Boat">
-            <option value="Ship">
-            <option value="Submarine">
-            <option value="Other">
-          </datalist>
-        </p>
+          <p>
+            <label for="select-transport">Favourite Transport:</label>
+            <input type="text" name="select-transport" id="select-transport" list="transport-list">
+            <datalist id="transport-list">
+              <option value="Car">
+              <option value="MoterCycle">
+              <option value="Scooter">
+              <option value="Aeroplane">
+              <option value="Helicopter">
+              <option value="SpaceCraft">
+              <option value="Boat">
+              <option value="Ship">
+              <option value="Submarine">
+              <option value="Other">
+            </datalist>
+          </p>
+        </fieldset>
       </form>
     </article>
     <hr />
