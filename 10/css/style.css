@@ -17,3 +17,7 @@ th, td, caption {
     border-collapse: separate;
     padding: 0.5rem;
 }
+
+textarea {
+    resize: none;
+}
