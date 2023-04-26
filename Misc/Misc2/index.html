@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Misc2</title>
@@ -15,16 +16,25 @@
             padding: 10px;
             border: 1px solid #ccc;
         }
+
+        .list-item {
+            grid-column: 1 / span 4;
+        }
+
+        .HEX-item {
+            grid-column: 1 / span 2;
+        }
+        .HSL-item {
+            grid-column: 3 / span 2;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="item" rowspan="2">
+        <div class="item list-item" rowspan="2">
             <object type="text/html" data="/Misc/Misc2/internal-pages/List.html"></object>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
         <div class="item">
             <object type="text/html" data="/Misc/Misc2/internal-pages/Table.html"></object>
         </div>
@@ -37,13 +47,13 @@
         <div class="item">
             <object type="text/html" data="/Misc/Misc2/internal-pages/ColorRGB.html"></object>
         </div>
-        <div class="item">
+        <div class="item HEX-item">
             <object type="text/html" data="/Misc/Misc2/internal-pages/ColorHEX.html"></object>
         </div>
-        <div></div>
-        <div class="item">
+        <div class="item HSL-item">
             <object type="text/html" data="/Misc/Misc2/internal-pages/ColorHSL.html"></object>
         </div>
     </div>
 </body>
+
 </html>
