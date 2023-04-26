@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Misc2</title>
-    </head>
-    <body>
-        <h1>Miscellaneous 2</h1>
-    </body>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Misc2</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0px;
+        }
+
+        .item {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" rowspan="2">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/List.html"></object>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="item">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/Table.html"></object>
+        </div>
+        <div class="item">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/Image.html"></object>
+        </div>
+        <div class="item">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/Hyperlink.html"></object>
+        </div>
+        <div class="item">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/ColorRGB.html"></object>
+        </div>
+        <div class="item">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/ColorHEX.html"></object>
+        </div>
+        <div></div>
+        <div class="item">
+            <object type="text/html" data="/Misc/Misc2/internal-pages/ColorHSL.html"></object>
+        </div>
+    </div>
+</body>
 </html>
