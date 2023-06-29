@@ -5,24 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALIDATION PROGRAM by ADITYA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            width: 400px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #error {
+            color: red;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        #success {
+            color: green;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="text-align: center;">VALIDATION PROGRAM</h1>
-    <div style="display: flex; justify-content: center;">
-        <form>
+    <h1>Validation Program</h1>
+    <div>
+        <form name="form" onsubmit="return validateForm()">
             <label for="name">Name: </label>
-            <input type="text" id="name" required>
+            <input type="text" id="name">
             <br><br>
             <label for="email">Email: </label>
-            <input type="email" id="email" required>
+            <input type="text" id="email">
             <br><br>
             <label for="mobile">Mobile: </label>
-            <input type="tel" id="mobile" required>
+            <input type="text" id="mobile">
             <br><br>
             <input type="submit" value="Submit">
+
+            <p id="error"></p>
+            <p id="success"></p>
         </form>
     </div>
+
+    <script>
+        function validateForm() {
+            var name = document.forms["form"]["name"].value;
+            var email = document.forms["form"]["email"].value;
+            var mobile = document.forms["form"]["mobile"].value;
+
+            var regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var regexMobile = /^\d{10}$/;
+            var regexName = /^[a-zA-Z]+$/;
+
+            if (name == "" || email == "" || mobile == "") {
+                document.getElementById("error").innerHTML = "Please fill all the fields.";
+                return false;
+            }
+
+            if (!email.match(regexEmail)) {
+                document.getElementById("error").innerHTML = "Please enter a valid email address.";
+                return false;
+            }
+
+            if (!mobile.match(regexMobile)) {
+                document.getElementById("error").innerHTML = "Please enter a valid mobile number.";
+                return false;
+            }
+
+            document.getElementById("success").innerHTML = "Form submitted successfully.";
+            document.getElementById("error").innerHTML = "";
+            return false;
+        }
+    </script>
 </body>
 
 </html>
